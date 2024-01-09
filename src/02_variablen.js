@@ -26,19 +26,35 @@
     JS ist eine untypisierte Sprache!
 */
 
-let test; //    Deklaration
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("-------------");
-test = "hello";                             // string
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("-------------");
-test = 2;                                   // number
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);
-console.log("-------------");
-test = true;                                // boolsche Zahl
-console.log("Datentyp: " + typeof test);
-console.log("Inhalt: " + test);             
+// let test; //    Deklaration
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("-------------");
+// test = "hello";                             // string
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("-------------");
+// test = 2;                                   // number
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);
+// console.log("-------------");
+// test = true;                                // boolsche Zahl
+// console.log("Datentyp: " + typeof test);
+// console.log("Inhalt: " + test);             
+
+/* Variablen vs. Konstanten in JS */
+
+let test;
+test = "hi";
+test = "hello";
+console.log("Inhalt: " + test); 
+
+const test2 = "Hi!";                            // Deklaration + Wertzuweisung
+//test2 = "Hello!";                               // Eingebauter fehler. Ich kann eine Konstante nicht mit einem neuen Wert besetzen
+console.log("Inhalt: " + test2);                // Ausgabe
+
+
+
+
+
 
