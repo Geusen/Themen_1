@@ -1,0 +1,2 @@
+/node_modules  // durch den Punkt vor dem Dateiname, 
+                // werden alle hier eingetragenen ordner oder dateien versteckt und sind nicht mehr Teil der Repository.
