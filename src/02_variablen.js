@@ -14,11 +14,11 @@
 
 /* Deklaration + Wertzuweisung I */
 
-// let firstName; //Deklaration (Definition)
-// console.log(firstName); // Ausgabe
-// firstName = "Max";      // Wertzuweisung | assigment
-// console.log(firstName); // Ausgabe
-// let familyName = "Mütze"; // Deklaration + Wertzuweisung
+// let firstName;               // Deklaration (Definition)
+// console.log(firstName);      // Ausgabe
+// firstName = "Max";           // Wertzuweisung | assigment
+// console.log(firstName);      // Ausgabe
+// let familyName = "Mütze";    // Deklaration + Wertzuweisung
 // console.log("Hi, ich bin "+ firstName +" "+ familyName); // Ausgabe
 
 /*
@@ -44,10 +44,10 @@
 
 /* Variablen vs. Konstanten in JS */
 
-let test;
-test = "hi";
-test = "hello";
-console.log("Inhalt: " + test); 
+let test;                                       // Variable : Deklaration
+test = "hi";                                     // Wertzuweisung
+test = "hello";                                  // Überschreiben
+console.log("Inhalt: " + test);                  // Ausgabe 
 
 const test2 = "Hi!";                            // Deklaration + Wertzuweisung
 //test2 = "Hello!";                               // Eingebauter fehler. Ich kann eine Konstante nicht mit einem neuen Wert besetzen

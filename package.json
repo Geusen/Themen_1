@@ -2,7 +2,7 @@
   "name": "themen_1",
   "version": "1.0.0",
   "description": "Prozedurale Programmierung",
-  "main": "src/02_variablen.js",
+  "main": "src/03_propmt.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
