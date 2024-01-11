@@ -90,12 +90,12 @@
 const firstName = "Jane";
 let job;
 
-job = "driver"; // .. fährt Taxi / UBER
-job = "diver";      // .. taucht im Rhein! 
-job = "artist";     // .. malt ein Bild!
-job = "pilot";      // .. macht etwas anderes! --> default
-job = "teacher";    // .. unterrichtet!
-job = "instructor";  // .. unterrichtet!
+job = "driver";         // .. fährt Taxi / UBER
+// job = "diver";          // .. taucht im Rhein! 
+// job = "artist";         // .. malt ein Bild!
+// job = "pilot";          // .. macht etwas anderes! --> default
+// job = "teacher";        // .. unterrichtet!
+// job = "instructor";     // .. unterrichtet!
 
 switch (job) 
 
