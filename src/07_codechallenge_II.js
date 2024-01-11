@@ -27,10 +27,10 @@ switch (true) {
         console.log(firstName + " trinkt Milch.");
         break;
     case (age >= 6) && (age <= 12):
-        console.log(firstName + " trinkt Saft.");
+        console.log(firstName + " trinkt Saft" + " oder Milch!");
         break;
     case (age >= 13) && (age <= 17):
-        console.log(firstName + " trinkt Cola.");
+        console.log(firstName + " trinkt Cola" + " oder Saft" + " oder Milch!");
         break;
     case (age >= 18) && (age <= 130):
         console.log(firstName + " trinkt Wein.");
