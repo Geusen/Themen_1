@@ -104,13 +104,15 @@ switch (job)
         console.log(firstName + " fährt TAXI!");
         break;
     case "diver":
-        console.log(firstName + " taucht im Rhein!")
+        console.log(firstName + " taucht im Rhein!");
         break;
     case "artist":
-        console.log(firstName + " malt ein Bild")
+        console.log(firstName + " malt ein Bild");
         break;
-     case "teacher":
-         console.log(firstName + " unterricht")
+    case "teacher":
+    case "instructor":
+         console.log(firstName + " unterrichtet")
+
         break;
 
     default:
