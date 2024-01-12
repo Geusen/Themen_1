@@ -78,11 +78,21 @@
 // }
 
 /**** Funktion 03b *****/
-output("hi");
-output(2);
-output(true);
 
+output(getString("Max", "Mütze"));
+
+
+function getString(firstname, famailyName) 
+{
+
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstname + GAP + famailyName + "!"
+    return outputStr //return schickt die Daten an den call ...
+}
+
+// 2. Funktionalität: string output
 function output(outputData) {
-    console.log(outputData);
+   console.log(outputData); 
     
 }
+
