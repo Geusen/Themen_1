@@ -19,12 +19,12 @@
 
 //ausgabeNamen();
 
-function ausgabeNamen() {
-    // interne Variable | What happens in functions stays at function
-    let firstName = "Maria";
-    console.log("Hallo, " + firstName +"!");
+// function ausgabeNamen() {
+//     // interne Variable | What happens in functions stays at function
+//     let firstName = "Maria";
+//     console.log("Hallo, " + firstName +"!");
     
-}
+// }
 
 
 //console.log(firstname); // Fehler : scope (Geltungsbereich)
@@ -32,13 +32,28 @@ function ausgabeNamen() {
 
 /***** Funktionen 02b *****/
 // 2b. Parametrisierung + Datenübergabe von AUSSEN
-ausgabeNamen2("Maria");    //Argument
-ausgabeNamen2("Nadim");
-ausgabeNamen2("Melanie"); 
+// ausgabeNamen2("Maria");             //Argument 
+// ausgabeNamen2("Nadim");
+// ausgabeNamen2("Melanie"); 
 
 
-function ausgabeNamen2(firstName) {
-    
-    
-    console.log("Hallo, " + firstName +"!");
+// function ausgabeNamen2(firstName)   // Parameter
+// { 
+//     console.log("Hallo, " + firstName +"!");
+// }
+
+
+/***** Funktion 02c ****/
+// 2c. Mehrere Parameter / Argument
+
+
+const prompt = require('prompt-sync')({sigint: true});
+
+ausgabeNamenParams(prompt("Bitte Namen eingeben: "), prompt("Bitte Nachnamen eingeben: ")); //Piping
+
+
+function ausgabeNamenParams(firstName, famailyName)   // Parameter
+{ 
+    console.log("Hallo, " + firstName + " " + famailyName + "!");
+
 }
