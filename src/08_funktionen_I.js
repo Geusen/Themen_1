@@ -3,3 +3,14 @@
 
 // 1. Kapselung von Codeblöcken
 
+// Funktionsaufruf | call
+test();
+
+
+// Funktionsrumpf 
+// Funktionsdeklaration
+function test()
+{
+    console.log("Hallo, Benjamin");
+}
+
