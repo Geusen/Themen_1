@@ -59,9 +59,10 @@ function divide(a,b) {
 	if (b !== 0) {
 		
 	
-	return a / b;
+	return a / b; // b !== 0
 	}
-	else{
+	else // b == 0
+	{
 		return "Division durch Null ist nicht definiert";
 	}
 }
