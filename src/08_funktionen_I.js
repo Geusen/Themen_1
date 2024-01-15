@@ -7,7 +7,7 @@
 // test();
 
 
-// // Funktionsrumpf 
+// // Funktionsrumpf  callee
 // // Funktionsdeklaration
 // function test()
 // {
@@ -93,6 +93,5 @@ function getString(firstname, famailyName)
 // 2. Funktionalität: string output
 function output(outputData) {
    console.log(outputData); 
-    
 }
 
