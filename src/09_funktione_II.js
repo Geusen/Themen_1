@@ -36,6 +36,7 @@ output(divide(4,2));
 output(divide(3,2));
 output(divide(3,-2));
 output(divide(0,2));
+output(divide(0,0));
 output(divide(3,0));
 
 /******	3. Fkt. Grundrechenarten	*****/
@@ -56,11 +57,12 @@ function multiply(a,b) {
 }
 
 function divide(a,b) {
-	if (b !== 0) {
+	if (b !== 0) // b !== 0
+	{
 		
-	
 	return a / b; // b !== 0
 	}
+
 	else // b == 0
 	{
 		return "Division durch Null ist nicht definiert";
