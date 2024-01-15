@@ -30,6 +30,13 @@
 // output(multiply(3,-2));
 // output(multiply(3,0));
 
+// module: division a / b |  test:
+
+output(divide(4,2));
+output(divide(3,2));
+output(divide(3,-2));
+output(divide(0,2));
+output(divide(3,0));
 
 /******	3. Fkt. Grundrechenarten	*****/
 
@@ -48,9 +55,15 @@ function multiply(a,b) {
 	return a * b;
 }
 
-function multiply(a,b) {
+function divide(a,b) {
+	if (b !== 0) {
+		
 	
-	return a * b;
+	return a / b;
+	}
+	else{
+		return "Division durch Null ist nicht definiert";
+	}
 }
 
 // module: output | test:
