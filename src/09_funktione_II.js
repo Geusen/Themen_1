@@ -17,17 +17,41 @@
 // output(add(2,-2));
 // output(add(2,0));
 
+// module: subtract a + b |  test:
+
+// output(subtract(3,2));
+// output(subtract(3,-2));
+// output(subtract(3,0));
+// output(subtract(0,2));
+
+
+// module: multiplication a * b |  test:
+// output(multiply(3,2));
+// output(multiply(3,-2));
+// output(multiply(3,0));
+
+
 /******	3. Fkt. Grundrechenarten	*****/
 
-function add(a, b) {
+function add(a,b) {
 
-	return a +b;
+	return a + b;
 }
 
-function sub(a, b) {
+function subtract(a,b) {
 	
+	return a - b;
 }
 
+function multiply(a,b) {
+	
+	return a * b;
+}
+
+function multiply(a,b) {
+	
+	return a * b;
+}
 
 // module: output | test:
 
