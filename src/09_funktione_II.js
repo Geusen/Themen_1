@@ -34,12 +34,12 @@ const ERROR_STR_DIV = "Division durch 0 ist nicht möglich!";
 
 // module: division a / b |  test:
 
-output(divide(4,2));
-output(divide(3,2));
-output(divide(3,-2));
-output(divide(0,2));
-output(divide(0,0));
-output(divide(3,0));
+// output(divide(4,2));
+// output(divide(3,2));
+// output(divide(3,-2));
+// output(divide(0,2));
+// output(divide(0,0));
+// output(divide(3,0));
 
 /******	3. Fkt. Grundrechenarten	*****/
 
@@ -61,9 +61,9 @@ function multiply(a,b) {
 function divide(a,b) {
 
 	if (b == 0) {
-		return ERROR_STR_DIV; // Ausnahme
+		return ERROR_STR_DIV; // Ausnahme (der Returnbefehl beendet die funktion, weshalb return a/ b nicht mehr ausgeführt wird.)
 	}
-	return a /b;	// Reguläres Verhalten
+	return a / b;	// Reguläres Verhalten
 
 }
 
