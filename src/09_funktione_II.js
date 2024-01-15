@@ -11,6 +11,8 @@
 4. Ausgabe in Konsole : check!
 */
 
+const ERROR_STR_DIV = "Division durch 0 ist nicht möglich!";
+
 // module: addition a + b |  test:
 
 // output(add(2,2));
@@ -32,12 +34,12 @@
 
 // module: division a / b |  test:
 
-output(divide(4,2));
-output(divide(3,2));
-output(divide(3,-2));
-output(divide(0,2));
-output(divide(0,0));
-output(divide(3,0));
+// output(divide(4,2));
+// output(divide(3,2));
+// output(divide(3,-2));
+// output(divide(0,2));
+// output(divide(0,0));
+// output(divide(3,0));
 
 /******	3. Fkt. Grundrechenarten	*****/
 
@@ -59,13 +61,11 @@ function multiply(a,b) {
 function divide(a,b) {
 	if (b !== 0) // b !== 0
 	{
-		
-	return a / b; // b !== 0
+		return a / b; 
 	}
-
-	else // b == 0
+	else // b == 0 
 	{
-		return "Division durch Null ist nicht definiert";
+		return ERROR_STR_DIV;
 	}
 }
 
