@@ -21,6 +21,7 @@ function startApp() {
 	output(calculator(getNum1(), getNum2(), getOp()));
 }
 
+
 function getNum1() {
 	return parseInt(prompt("Zahl1?: "));
 }
@@ -32,6 +33,7 @@ function getNum2() {
 function getOp() {
 	return prompt("OP?: ");
 }
+
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
