@@ -28,12 +28,18 @@
 // }
 
 // Dekrement (obere Grenze --> untere Grenze)
-for (let i = 10; i > 0; i--) 
+// for (let i = 10; i > 0; i--) 
+// {
+//     output(i);
+// }
+
+// Inkrement (var. Schrittweite)
+
+for (let i = 10; i <= 100; i += 5) 
 {
     output(i);
 }
 
-// Inkrement (var. Schrittweite)
 /**
  *   PRAXIS
  * 
