@@ -152,17 +152,29 @@ function getSentenceArr2(arr) {
     const GAP = " ";
     const PUNCT = ".";    
     let str = "";
-    
-    for (let i = 0; i < arr.length; i++) {
+
+    // // 1. Variante: Struktur GENAU erzeugen ...
+
+    // for (let i = 0; i < arr.length; i++) {
        
-       if (i != arr.length -1) {     // wenn du noch nicht am Ende des Arrays bist ...
-        str += arr[i] + GAP;             // a = a + 1
-       } else {
-        str += arr[i] + PUNCT;
-       }
+    //    if (i != arr.length -1) {     // wenn du noch nicht am Ende des Arrays bist ...
+    //     str += arr[i] + GAP;             // a = a + 1
+    //    } else {
+    //     str += arr[i] + PUNCT;
+    //    }
+    // }
+    
+
+    
+    // 2. Variante Struktur erzeugen + trimmen()    // for (let i = 0; i < arr.length; i++) {
+       
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i] + GAP;             // a = a + 1    
     }
-    return str;
+    return str.trim() + PUNCT;
 }
+
+
 
 
 
