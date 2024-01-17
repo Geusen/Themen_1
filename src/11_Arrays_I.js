@@ -88,11 +88,11 @@ Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
 
-let str = "Test";
-for (let i = 0; i < 10; i++) {
-   str += "Test";             // a = a + 1
-   output(str);
-}
+// let str = "";
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " ";             // a = a + 1
+//    output(str);
+// }
 
 /**
  *   PRAXIS
@@ -146,18 +146,16 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
-// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr2(arr) {
     const GAP = " ";
-    const PUNCT = ".";
-    let str ;   
+    const PUNCT = ".";    
+    let str = "";
     
-    for (let i = 0; i < arr.length; i++) 
-    {
-    
-    output(arr[i]);
+    for (let i = 0; i < arr.length; i++) {
+    str += arr[i] + GAP;             // a = a + 1
     }
-    return str;
+    return str + PUNCT;
     
 }
 
