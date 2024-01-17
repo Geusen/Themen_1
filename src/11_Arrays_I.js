@@ -125,6 +125,7 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // word1,word2, .... wordN :: Semantische Struktur
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
+
 // output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 // function getSentenceArr(arr) {
 //     for (let i = 0; i < 5; i++) 
@@ -153,9 +154,14 @@ function getSentenceArr2(arr) {
     let str = "";
     
     for (let i = 0; i < arr.length; i++) {
-    str += arr[i] + GAP;             // a = a + 1
+       
+       if (i != arr.length -1) {     // wenn du noch nicht am Ende des Arrays bist ...
+        str += arr[i] + GAP;             // a = a + 1
+       } else {
+        str += arr[i] + PUNCT;
+       }
     }
-    return str + PUNCT; 
+    return str;
 }
 
 
