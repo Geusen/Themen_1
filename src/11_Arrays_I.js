@@ -155,9 +155,10 @@ function getSentenceArr2(arr) {
     for (let i = 0; i < arr.length; i++) {
     str += arr[i] + GAP;             // a = a + 1
     }
-    return str + PUNCT;
-    
+    return str + PUNCT; 
 }
+
+
 
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
