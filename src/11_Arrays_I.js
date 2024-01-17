@@ -6,7 +6,7 @@
  * 
  */
 
-/***** Theorie: Array */
+/***** 02 Theorie: Array */
 // let arr;
 // //arr = new Array();        // Konstruktor
 // arr = [];                   // Literal
@@ -18,7 +18,22 @@
 // output(arr[0]);             // Index 0 (1. Pos. im Array)
 // output(arr[arr.length-1]);  // letzte Pos. / allgemein           
 
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
 
+// Inkrement (untere Grenze --> obere Grenze)
+// for (let i = 0; i < 5; i++) 
+// {
+//     output(i);
+// }
+
+// Dekrement (obere Grenze --> untere Grenze)
+for (let i = 10; i > 0; i--) 
+{
+    output(i);
+}
+
+// Inkrement (var. Schrittweite)
 /**
  *   PRAXIS
  * 
@@ -48,7 +63,7 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // word1,word2, .... wordN :: Semantische Struktur
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation semantisches Problem --> numerisches Problem
-output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
 function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
