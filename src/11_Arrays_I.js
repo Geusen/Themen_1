@@ -168,14 +168,16 @@ function getSentenceArr2(arr) {
     
     // 2. Variante Struktur erzeugen + trimmen()    // for (let i = 0; i < arr.length; i++) {
        
-    for (let i = 0; i < arr.length; i++) {
-        str += arr[i] + GAP;             // a = a + 1    
-    }
-    return str.trim() + PUNCT;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         str += arr[i] + GAP;             // a = a + 1    
+    //     }
+    //     return str.trim() + PUNCT;
+    // }
+
+    // 3. Variante: Ausnutzen von generischen Funktionen
+
+    return arr.join(GAP) + PUNCT;
 }
-
-
-
 
 
 // Modul: Ausgabe in Konsole : Test
@@ -183,5 +185,3 @@ function getSentenceArr2(arr) {
 function output(outputStr) {
     console.log(outputStr);
 }
-
-
