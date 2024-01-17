@@ -10,7 +10,7 @@
 
 // Parameter --> funktion getSentence([ ...], "Q"){ ...}
 
-
+// test 
 /*** Funktion mit Array als Parameter */
 // mögliche Tests:
 output(getSentence(["Ich","bin","Max"],"S"));
