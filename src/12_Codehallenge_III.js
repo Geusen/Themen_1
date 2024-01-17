@@ -31,7 +31,7 @@ function getSentence(arr,op) {
     }
      return str;
 }
-
+// test
 function getPunct(op) {
     switch (op) {
         case "S":
