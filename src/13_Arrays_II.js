@@ -2,15 +2,15 @@
 
 // push() / pop()
 // push --> Daten rein ... (+)
-let arr = [];
+// let arr = [];
 
-output(arr);
-arr.push("Ich");
-output(arr);
-arr.push("bin");
-output(arr);
-arr.push("Max");
-output(arr);
+// output(arr);
+// arr.push("Ich");
+// output(arr);
+// arr.push("bin");
+// output(arr);
+// arr.push("Max");
+// output(arr); 
 
 
 // // pop() --> Daten raus ... (-)
@@ -73,11 +73,11 @@ function getHTML() {
 function getElement(tag,op) {
     switch (op) {
         case "open":
-            // return COBJ.open_o + tag + COBJ.close;
-            return CONTROLS[0] + tag + CONTROLS[2];
+             return COBJ.open_o + tag + COBJ.close;
+            // return CONTROLS[0] + tag + CONTROLS[2];
         case "close":
-            // return COBJ.close_o + tag + COBJ.close;
-            return CONTROLS[1] + tag + CONTROLS[2];
+             return COBJ.close_o + tag + COBJ.close;
+            //return CONTROLS[1] + tag + CONTROLS[2];
         default:
             return ERR_STR;
     }
