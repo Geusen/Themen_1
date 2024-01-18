@@ -22,7 +22,14 @@ output(arr[0][0]+ " " + arr[1][2]);
 output(arr[1][0]);
 output("------------");
 
+// nested loops
 
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+        output("Index i: " + i + " Index j: " + j);
+        output(arr[i][j]);      
+    }
+}
 
 
 
