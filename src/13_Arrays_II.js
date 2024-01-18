@@ -2,7 +2,7 @@
 
 // push() / pop()
 // push --> Daten rein ... (+)
-// let arr = [];
+let arr = [];
 
 output(arr);
 arr.push("Ich");
