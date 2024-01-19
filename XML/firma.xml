@@ -1,0 +1,14 @@
+<firma>
+    <abteilung name="Buchhaltung">
+        <ma name="Lehmann"></ma>
+    </abteilung>
+    <abteilung name="Produktion">
+        <ma name="Breitner"></ma>
+        <ma name="Paul"></ma>
+        <ma name="Degen"></ma>
+    </abteilung>
+    <abteilung name="Vertrieb">
+        <ma name="Schulz"></ma>
+        <ma name="Meier"></ma>
+    </abteilung>
+</firma>
