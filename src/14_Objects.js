@@ -58,10 +58,29 @@ let person = {
 
 const txt = person.sayHello() + " und verdiene " + person.salary[1] + " p.a."
 
+// output(txt);
 
+/***** Objekte 2 - Hierarchie *******/
+// Tiefer, tiefer - Irgendwo in der Tiefe gibt es ein Licht // K.Bush
+// Der Baikalsee ist mit 1642 m der tiefste See der Erde. ...
+// deep - deeper - deepest
+// nested object {{{}}}
 
+let baikal = {
+                value: "10m",
+                deep:{
+                        deeper:{
+                                Temperature:"4 Grad Celsius",
+                                deepest: "Das Licht - auf 1642m!" 
+                            }
 
-output(txt);
+                    }
+            };
+
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.Temperature);
+output(baikal.deep.deeper.deepest);
 
 // Modul: Ausgabe | Test
 //output("hi");
