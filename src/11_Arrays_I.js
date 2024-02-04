@@ -8,7 +8,7 @@
 
 /***** 02 Theorie: Array */
 // let arr;
-// //arr = new Array();        // Konstruktor
+// arr = new Array(String);        // Konstruktor
 // arr = [];                   // Literal
 // arr =[2, 11, 7, 8 ,10];
 // //arr =[2,11];
@@ -103,19 +103,19 @@ hier: Verkettung eines Strings // Transponierung
 // --> "Ich bin Max Mütze."
 //output(getSentence("Ich","bin","Max","Mütze"));
 //output(getSentence("Ich","bin","die","coole","Maxine","Mützerich"));
-function getSentence(word1,word2,word3,word4,word5,word6) {
-    const GAP = " ";
-    const PUNCT = ".";
-    let str =   word1 + GAP +
-                word2 + GAP +
-                word3 + GAP +
-                word4 + GAP +
-                word5 + GAP +
-                word6 +
-                PUNCT;
+// function getSentence(word1,word2,word3,word4,word5,word6) {
+//     const GAP = " ";
+//     const PUNCT = ".";
+//     let str =   word1 + GAP +
+//                 word2 + GAP +
+//                 word3 + GAP +
+//                 word4 + GAP +
+//                 word5 + GAP +
+//                 word6 +
+//                 PUNCT;
 
-    return str;
-}
+//     return str;
+// }
 
 
 
@@ -147,11 +147,11 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // Transponierung:  untereinander ---> nebeneinander
 // Helge Schneider: Anananandereihung ...
 
-output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
-function getSentenceArr2(arr) {
-    const GAP = " ";
-    const PUNCT = ".";    
-    let str = "";
+// output(getSentenceArr2(["Ich","bin","die","coole","Maxine","Mützerich"]));
+// function getSentenceArr2(arr) {
+//     const GAP = " ";
+//     const PUNCT = ".";    
+//     let str = "";
 
     // // 1. Variante: Struktur GENAU erzeugen ...
 
@@ -176,7 +176,46 @@ function getSentenceArr2(arr) {
 
     // 3. Variante: Ausnutzen von generischen Funktionen
 
-    return arr.join(GAP) + PUNCT;
+//     return arr.join(GAP) + PUNCT;
+// }
+
+const prompt = require('prompt-sync')({sigint: true});
+
+startApp();
+function startApp() {
+	output(calculator(getNum1(), getNum2(), getOp()));
+}
+
+
+function getNum1() {
+	return parseInt(prompt("Zahl1?: "));
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl2?: "));
+}
+
+function getOp() {
+	return prompt("Summe oder Differenz?: ");
+}
+
+function calculator(a, b, op) {
+	switch (op) {
+		case "Summe": // add()
+			return summe(a, b);
+		case "Differenz": // sub()
+			return differenz(a, b);
+		default: // ERROR
+			return ERROR_STR_GEN;
+	}
+}
+
+function summe(a,b) {
+	return a + b;
+}
+
+function differenz(a,b) {
+	return a - b;
 }
 
 
